@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.5 on win32)" generated="20200123 15:45:44.236" rpa="false">
+<suite id="s1" name="Tests" source="C:\development\robot-scripts\Estate\tests">
+<suite id="s1-s1" name="Estate" source="C:\development\robot-scripts\Estate\tests\estate.robot">
+<test id="s1-s1-t1" name="[Documentation]">
+<kw name="Begin Web Test" library="global">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 15:45:44.457" level="INFO">Opening browser 'gc' to base url 'https://10.16.0.252:9000/emgui/login.jsp?logout'.</msg>
+<status status="PASS" starttime="20200123 15:45:44.457" endtime="20200123 15:46:11.104"></status>
+</kw>
+<status status="PASS" starttime="20200123 15:45:44.456" endtime="20200123 15:46:11.104"></status>
+</kw>
+<kw name="Login Happy Path" library="login">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username username</arg>
+</arguments>
+<msg timestamp="20200123 15:46:11.105" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20200123 15:46:11.105" endtime="20200123 15:46:11.105"></status>
+</kw>
+<status status="FAIL" starttime="20200123 15:46:11.104" endtime="20200123 15:46:11.105"></status>
+</kw>
+<tags>
+<tag>Test login OK</tag>
+</tags>
+<status status="FAIL" starttime="20200123 15:45:44.455" endtime="20200123 15:46:11.106" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20200123 15:45:44.268" endtime="20200123 15:46:11.109"></status>
+</suite>
+<status status="FAIL" starttime="20200123 15:45:44.238" endtime="20200123 15:46:11.114"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Test login OK</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Estate">Tests.Estate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
